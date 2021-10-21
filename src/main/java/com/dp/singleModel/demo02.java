@@ -4,7 +4,7 @@ package com.dp.singleModel;
 利用锁解决线程安全问题，但是代码较为繁琐
  */
 public class demo02 {
-    private static demo02 INSTANCE;
+    private static volatile demo02 INSTANCE;
     private demo02(){};
 
     public static demo02 getInstance(){
